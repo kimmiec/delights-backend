@@ -43,7 +43,7 @@ app.get('/', (req,res) =>{
 })
 
 // create
-app.post('/', async (req,res) =>{
+app.post('/post', async (req,res) =>{
     try{
         res.json(await Blog.create(req.body))
     } catch (error) {
