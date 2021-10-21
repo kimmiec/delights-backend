@@ -34,12 +34,12 @@ app.use(express.json());
 // ============ ROUTES ============
 // index
 app.get('/', (req,res) =>{
-    res.send('hello pikachu')
-    // try {
-    //     res.json(await Blog.find({}))
-    // } catch (error) {
-    //     res.status(400).json(error)
-    // }
+    // res.send('hello pikachu')
+    try {
+        res.json(await Blog.find({}))
+    } catch (error) {
+        res.status(400).json(error)
+    }
 })
 
 // create
