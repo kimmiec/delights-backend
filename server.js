@@ -22,7 +22,8 @@ mongoose.connection
 const BlogSchema = new mongoose.Schema({
     name: String,
     image: String,
-    desc: String
+    desc: String,
+    info: String
 });
 
 const Blog = mongoose.model('Blog', BlogSchema);
